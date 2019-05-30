@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayout.lt-md="column" class="main-container">
+  <div fxFlex="80px">
+    <app-sidebar (toggle)="onMenuToggle()"></app-sidebar>
+  </div>
+  <div fxFlex="auto" class="main-container__content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div
+  *ngIf="menuOpened"
+  class="menu-container"
+  ngClass.lt-md="menu-container-lt-md"
+  @slideInOut
+>
+  <app-menu></app-menu>
+</div>

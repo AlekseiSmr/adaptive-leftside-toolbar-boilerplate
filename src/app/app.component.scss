@@ -1,0 +1,30 @@
+@import '../styles/palette.scss';
+@import '../styles/navbar.scss';
+
+.main-container {
+  height: 100%;
+  &__content {
+    background-color: $bg-400;
+    height: 100%;
+  }
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: $navbar-width;
+  height: 100%;
+  width: 200px;
+  z-index: 1;
+  background-color: red;
+  &-lt-md {
+    position: absolute;
+    top: $navbar-width;
+    left: 0;
+    height: calc(100% - #{$navbar-width});
+  }
+}
+
+.open-close-container {
+  background-color: red;
+}

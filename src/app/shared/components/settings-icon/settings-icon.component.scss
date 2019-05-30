@@ -1,0 +1,53 @@
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/navbar.scss';
+
+%square-size {
+  width: 32px;
+  height: 32px;
+}
+
+%square-size-inner {
+  width: 24px;
+  height: 24px;
+}
+
+.settings-container {
+  @extend %square-size;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-container:hover {
+  border-radius: 50%;
+  background-color: $navbar-hover;
+}
+
+.link {
+  @extend %square-size-inner;
+}
+
+.tooltip {
+  @extend %square-size-inner;
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext {
+  border-radius: 6px;
+  visibility: hidden;
+  padding: 5px 10px 5px 10px;
+  background-color: $bg-900;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  top: 16%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

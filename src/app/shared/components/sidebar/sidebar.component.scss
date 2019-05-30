@@ -1,0 +1,25 @@
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/navbar.scss';
+
+.items-container {
+  height: 100%;
+  background-color: $navbar;
+  position: relative;
+  z-index: 2;
+  &__top {
+    &_empty {
+      min-height: 20px;
+      max-height: 20px;
+      min-width: 20px;
+      max-width: 20px;
+    }
+  }
+  &__bottom {
+    &_empty {
+      min-height: 20px;
+      max-height: 20px;
+      min-width: 20px;
+      max-width: 20px;
+    }
+  }
+}

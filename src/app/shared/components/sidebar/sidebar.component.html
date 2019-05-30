@@ -1,0 +1,65 @@
+<div
+  fxLayout="row"
+  fxLayout.gt-sm="column"
+  fxLayoutAlign="space-between center"
+  fxLayoutAlign.lt-md="space-between center"
+  class="items-container"
+>
+  <div class="items-container__top">
+    <div
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayout.lt-md="row"
+      fxLayoutAlign.lt-md="start center"
+      fxLayoutGap="20px"
+    >
+      <div class="items-container__top_empty"></div>
+      <div>
+        <a class="nav-link">
+          <img src="assets/find.svg" width="24" height="24" />
+        </a>
+      </div>
+
+      <div>
+        <a class="nav-link">
+          <img src="assets/bar-graph.svg" width="24" height="24" />
+        </a>
+      </div>
+      <div>
+        <a class="nav-link" (click)="onMenuClick()">
+          <img src="assets/document.svg" width="24" height="24" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="items-container__bottom">
+    <div
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayout.lt-md="row"
+      fxLayoutAlign.lt-md="start center"
+      fxLayoutGap="10px"
+    >
+      <div>
+        <app-settings-icon></app-settings-icon>
+      </div>
+      <div>
+        <a class="nav-link">
+          <img
+            src="assets/iconfinder_icon-help-circled.svg"
+            width="24"
+            height="24"
+          />
+        </a>
+      </div>
+
+      <div>
+        <a class="nav-link">
+          <img src="assets/profile.svg" width="24" height="24" />
+        </a>
+      </div>
+
+      <div class="items-container__bottom_empty"></div>
+    </div>
+  </div>
+</div>
